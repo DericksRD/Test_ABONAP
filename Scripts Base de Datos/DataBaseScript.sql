@@ -88,7 +88,7 @@ CREATE TABLE Prestamos(
 	FechaCreacion DATETIME DEFAULT getDate(),
 	FechaActualizacion DATETIME DEFAULT getDate(),
 	Codigo NVARCHAR(30),
-	Estado BINARY,
+	Estado NVARCHAR(30),
 	IdCliente INT NOT NULL,
 	IdSucursal INT NOT NULL,
 

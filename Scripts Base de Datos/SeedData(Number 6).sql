@@ -98,3 +98,42 @@ INSERT INTO Documento
 		(Descripcion, Estado ,IdTipoDocumento)
 	VALUES
 		('005-87598-9', 0, 1);
+
+/*Empleados*/
+INSERT INTO Empleados
+		(Codigo, Estado, IdPersona, IdSucursal)
+	VALUES
+		('EMP00001', 1, 1, 1);
+
+INSERT INTO Empleados
+		(Codigo, Estado, IdPersona, IdSucursal)
+	VALUES
+		('EMP00002', 1, 2, 1);
+
+/*Clientes*/
+INSERT INTO Clientes
+		(Codigo, Estado, IdPersona, IdSucursal)
+	VALUES
+		('CLI00001', 1, 1, 1);
+
+
+INSERT INTO Clientes
+		(Codigo, Estado, IdPersona, IdSucursal)
+	VALUES
+		('CLI00002', 1, 2, 1);
+
+/*Prestamos*/
+INSERT INTO Prestamos
+		(Codigo, Estado, IdCliente, IdSucursal)
+	VALUES
+		('PRES00001', 'C', 1, 1);
+
+INSERT INTO Prestamos
+		(Codigo, Estado, IdCliente, IdSucursal)
+	VALUES
+		('PRES00002', 'A', 1, 2);
+
+INSERT INTO Prestamos
+		(Codigo, Estado, IdCliente, IdSucursal)
+	VALUES
+		('PRES00003', 'A', 2, 3);
