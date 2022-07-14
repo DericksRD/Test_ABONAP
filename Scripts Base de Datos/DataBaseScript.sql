@@ -36,6 +36,7 @@ CREATE TABLE Departamentos(
 	FechaCreacion DateTime DEFAULT getDate(),
 	FechaActualizacion DATETIME DEFAULT getDate(),
 	Codigo NVARCHAR(30),
+	Estado BINARY,
 	IdSucursal INT NOT NULL,
 
 	PRIMARY KEY(IdDepartamentos),
