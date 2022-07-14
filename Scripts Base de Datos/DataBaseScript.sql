@@ -87,6 +87,7 @@ CREATE TABLE Prestamos(
 	IdPrestamo INT IDENTITY NOT NULL,
 	FechaCreacion DATETIME DEFAULT getDate(),
 	FechaActualizacion DATETIME DEFAULT getDate(),
+	Monto DECIMAL(18, 2),
 	Codigo NVARCHAR(30),
 	Estado NVARCHAR(30),
 	IdCliente INT NOT NULL,

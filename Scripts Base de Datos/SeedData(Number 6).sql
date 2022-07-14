@@ -124,16 +124,16 @@ INSERT INTO Clientes
 
 /*Prestamos*/
 INSERT INTO Prestamos
-		(Codigo, Estado, IdCliente, IdSucursal)
+		(Codigo, Estado, IdCliente, IdSucursal, Monto)
 	VALUES
-		('PRES00001', 'C', 1, 1);
+		('PRES00001', 'C', 1, 1, 10000);
 
 INSERT INTO Prestamos
-		(Codigo, Estado, IdCliente, IdSucursal)
+		(Codigo, Estado, IdCliente, IdSucursal, Monto)
 	VALUES
-		('PRES00002', 'A', 1, 2);
+		('PRES00002', 'A', 1, 2, 850000);
 
 INSERT INTO Prestamos
-		(Codigo, Estado, IdCliente, IdSucursal)
+		(Codigo, Estado, IdCliente, IdSucursal, Monto)
 	VALUES
-		('PRES00003', 'A', 2, 3);
+		('PRES00003', 'A', 2, 3, 68000);
