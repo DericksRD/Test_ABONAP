@@ -12,7 +12,7 @@ CREATE TABLE Empresas(
 	FechaCreacion DATETIME DEFAULT getDate(),
 	FechaActualizacion DATETIME DEFAULT getDate(),
 	Codigo NVARCHAR(30),
-	Estado BINARY,
+	Estado BIT,
 
 	PRIMARY KEY(IdEmpresa)
 );
@@ -23,7 +23,7 @@ CREATE TABLE Sucursales(
 	FechaCreacion DATETIME DEFAULT getDate(),
 	FechaActualizacion DATETIME DEFAULT getDate(),
 	Codigo NVARCHAR(30),
-	Estado BINARY,
+	Estado BIT,
 	IdEmpresa INT NOT NULL,
 
 	PRIMARY KEY(IdSucursal),
@@ -36,7 +36,7 @@ CREATE TABLE Departamentos(
 	FechaCreacion DateTime DEFAULT getDate(),
 	FechaActualizacion DATETIME DEFAULT getDate(),
 	Codigo NVARCHAR(30),
-	Estado BINARY,
+	Estado BIT,
 	IdSucursal INT NOT NULL,
 
 	PRIMARY KEY(IdDepartamentos),
@@ -50,7 +50,7 @@ CREATE TABLE Personas(
 	SegundoApellido NVARCHAR(100),
 	FechaCreacion DATETIME DEFAULT getDate(),
 	Codigo NVARCHAR(30),
-	Estado BINARY,
+	Estado BIT,
 
 	PRIMARY KEY(IdPersona)
 );
@@ -60,7 +60,7 @@ CREATE TABLE Empleados(
 	FechaCreacion DATETIME DEFAULT getDate(),
 	FechaActualizacion DATETIME DEFAULT getDate(),
 	Codigo NVARCHAR(30),
-	Estado BINARY,
+	Estado BIT,
 	IdPersona INT NOT NULL,
 	IdSucursal INT NOT NULL,
 
@@ -74,7 +74,7 @@ CREATE TABLE Clientes(
 	FechaCreacion DATETIME DEFAULT getDate(),
 	FechaActualizacion DATETIME DEFAULT getDate(),
 	Codigo NVARCHAR(30),
-	Estado BINARY,
+	Estado BIT,
 	IdPersona INT NOT NULL,
 	IdSucursal INT NOT NULL,
 
@@ -111,7 +111,7 @@ CREATE TABLE Documento(
 	FechaCreacion DATETIME DEFAULT getDate(),
 	FechaActualizacion DATETIME DEFAULT getDate(),
 	Descripcion NVARCHAR(50),
-	Estado BINARY,
+	Estado BIT,
 	IdTipoDocumento INT NOT NULL,
 
 	PRIMARY KEY(IdDocumento),

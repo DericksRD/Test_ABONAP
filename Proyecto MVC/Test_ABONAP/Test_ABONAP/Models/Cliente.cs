@@ -16,7 +16,7 @@ namespace Test_ABONAP
         public DateTime? FechaCreacion { get; set; }
         public DateTime? FechaActualizacion { get; set; }
         public string Codigo { get; set; }
-        public byte[] Estado { get; set; }
+        public bool? Estado { get; set; }
         public int IdPersona { get; set; }
         public int IdSucursal { get; set; }
 

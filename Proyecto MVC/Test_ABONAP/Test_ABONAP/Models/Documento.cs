@@ -11,7 +11,7 @@ namespace Test_ABONAP
         public DateTime? FechaCreacion { get; set; }
         public DateTime? FechaActualizacion { get; set; }
         public string Descripcion { get; set; }
-        public byte[] Estado { get; set; }
+        public bool? Estado { get; set; }
         public int IdTipoDocumento { get; set; }
 
         public virtual TipoDocumento IdTipoDocumentoNavigation { get; set; }

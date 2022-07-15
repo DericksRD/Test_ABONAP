@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_ABONAP", "Test_ABONAP\Test_ABONAP.csproj", "{5AD4CB99-F151-4E00-AD4A-78F811C1568E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_ABONAP", "Test_ABONAP\Test_ABONAP.csproj", "{AC2D6A80-09E0-4786-9697-D12B4A9DF1C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5AD4CB99-F151-4E00-AD4A-78F811C1568E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5AD4CB99-F151-4E00-AD4A-78F811C1568E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5AD4CB99-F151-4E00-AD4A-78F811C1568E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5AD4CB99-F151-4E00-AD4A-78F811C1568E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2D6A80-09E0-4786-9697-D12B4A9DF1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2D6A80-09E0-4786-9697-D12B4A9DF1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2D6A80-09E0-4786-9697-D12B4A9DF1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2D6A80-09E0-4786-9697-D12B4A9DF1C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {97D1E61C-BD34-436E-B55D-786FFBDE9934}
+		SolutionGuid = {B47B5270-A8E4-4D02-867B-779472554457}
 	EndGlobalSection
 EndGlobal

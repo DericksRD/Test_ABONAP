@@ -43,13 +43,9 @@ namespace Test_ABONAP
             modelBuilder.Entity<Cliente>(entity =>
             {
                 entity.HasKey(e => e.IdCliente)
-                    .HasName("PK__Clientes__D594664277F38EE1");
+                    .HasName("PK__Clientes__D5946642E40522C9");
 
                 entity.Property(e => e.Codigo).HasMaxLength(30);
-
-                entity.Property(e => e.Estado)
-                    .HasMaxLength(1)
-                    .IsFixedLength(true);
 
                 entity.Property(e => e.FechaActualizacion)
                     .HasColumnType("datetime")
@@ -75,15 +71,11 @@ namespace Test_ABONAP
             modelBuilder.Entity<Departamento>(entity =>
             {
                 entity.HasKey(e => e.IdDepartamentos)
-                    .HasName("PK__Departam__87FA9BFF1389E432");
+                    .HasName("PK__Departam__87FA9BFF137AC58F");
 
                 entity.Property(e => e.Codigo).HasMaxLength(30);
 
                 entity.Property(e => e.Descripcion).HasMaxLength(45);
-
-                entity.Property(e => e.Estado)
-                    .HasMaxLength(1)
-                    .IsFixedLength(true);
 
                 entity.Property(e => e.FechaActualizacion)
                     .HasColumnType("datetime")
@@ -103,15 +95,11 @@ namespace Test_ABONAP
             modelBuilder.Entity<Documento>(entity =>
             {
                 entity.HasKey(e => e.IdDocumento)
-                    .HasName("PK__Document__E5207347064E3761");
+                    .HasName("PK__Document__E5207347DC415C91");
 
                 entity.ToTable("Documento");
 
                 entity.Property(e => e.Descripcion).HasMaxLength(50);
-
-                entity.Property(e => e.Estado)
-                    .HasMaxLength(1)
-                    .IsFixedLength(true);
 
                 entity.Property(e => e.FechaActualizacion)
                     .HasColumnType("datetime")
@@ -131,13 +119,9 @@ namespace Test_ABONAP
             modelBuilder.Entity<Empleado>(entity =>
             {
                 entity.HasKey(e => e.IdEmpleado)
-                    .HasName("PK__Empleado__CE6D8B9EAB35FED8");
+                    .HasName("PK__Empleado__CE6D8B9E355F6EBF");
 
                 entity.Property(e => e.Codigo).HasMaxLength(30);
-
-                entity.Property(e => e.Estado)
-                    .HasMaxLength(1)
-                    .IsFixedLength(true);
 
                 entity.Property(e => e.FechaActualizacion)
                     .HasColumnType("datetime")
@@ -163,15 +147,11 @@ namespace Test_ABONAP
             modelBuilder.Entity<Empresa>(entity =>
             {
                 entity.HasKey(e => e.IdEmpresa)
-                    .HasName("PK__Empresas__5EF4033ECB49C440");
+                    .HasName("PK__Empresas__5EF4033E7CD4553C");
 
                 entity.Property(e => e.Codigo).HasMaxLength(30);
 
                 entity.Property(e => e.Descripcion).HasMaxLength(45);
-
-                entity.Property(e => e.Estado)
-                    .HasMaxLength(1)
-                    .IsFixedLength(true);
 
                 entity.Property(e => e.FechaActualizacion)
                     .HasColumnType("datetime")
@@ -185,13 +165,9 @@ namespace Test_ABONAP
             modelBuilder.Entity<Persona>(entity =>
             {
                 entity.HasKey(e => e.IdPersona)
-                    .HasName("PK__Personas__2EC8D2AC5E4F3D45");
+                    .HasName("PK__Personas__2EC8D2AC2E31E5FC");
 
                 entity.Property(e => e.Codigo).HasMaxLength(30);
-
-                entity.Property(e => e.Estado)
-                    .HasMaxLength(1)
-                    .IsFixedLength(true);
 
                 entity.Property(e => e.FechaCreacion)
                     .HasColumnType("datetime")
@@ -207,7 +183,7 @@ namespace Test_ABONAP
             modelBuilder.Entity<Prestamo>(entity =>
             {
                 entity.HasKey(e => e.IdPrestamo)
-                    .HasName("PK__Prestamo__6FF194C0186358C4");
+                    .HasName("PK__Prestamo__6FF194C0EF04E30A");
 
                 entity.Property(e => e.Codigo).HasMaxLength(30);
 
@@ -239,15 +215,11 @@ namespace Test_ABONAP
             modelBuilder.Entity<Sucursale>(entity =>
             {
                 entity.HasKey(e => e.IdSucursal)
-                    .HasName("PK__Sucursal__BFB6CD9996E66884");
+                    .HasName("PK__Sucursal__BFB6CD99E4487470");
 
                 entity.Property(e => e.Codigo).HasMaxLength(30);
 
                 entity.Property(e => e.Descripcion).HasMaxLength(45);
-
-                entity.Property(e => e.Estado)
-                    .HasMaxLength(1)
-                    .IsFixedLength(true);
 
                 entity.Property(e => e.FechaActualizacion)
                     .HasColumnType("datetime")
@@ -267,7 +239,7 @@ namespace Test_ABONAP
             modelBuilder.Entity<TipoDocumento>(entity =>
             {
                 entity.HasKey(e => e.IdTipoDocumento)
-                    .HasName("PK__TipoDocu__3AB3332F1C4FB9EA");
+                    .HasName("PK__TipoDocu__3AB3332F48B2BCEB");
 
                 entity.ToTable("TipoDocumento");
 

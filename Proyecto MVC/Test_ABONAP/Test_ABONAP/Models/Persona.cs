@@ -19,7 +19,7 @@ namespace Test_ABONAP
         public string SegundoApellido { get; set; }
         public DateTime? FechaCreacion { get; set; }
         public string Codigo { get; set; }
-        public byte[] Estado { get; set; }
+        public bool? Estado { get; set; }
 
         public virtual ICollection<Cliente> Clientes { get; set; }
         public virtual ICollection<Empleado> Empleados { get; set; }
