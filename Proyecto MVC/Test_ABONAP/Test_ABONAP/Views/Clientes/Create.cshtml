@@ -18,13 +18,22 @@
                 <span asp-validation-for="Codigo" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Estado" class="control-label"></label>
-                <input asp-for="Estado" class="form-control" />
+                <label class="control-label">Nombres</label>
+                @*<input asp-for="Estado" class="form-control" />*@
+                @Html.TextBox("Nombres")
                 <span asp-validation-for="Estado" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IdPersona" class="control-label"></label>
-                <select asp-for="IdPersona" class ="form-control" asp-items="ViewBag.IdPersona"></select>
+                <label class="control-label">Primer Apellido</label>
+                @Html.TextBox("PrimerApellido")
+            </div>
+            <div class="form-group">
+                <label class="control-label">Segundo Apellido</label>
+                @Html.TextBox("SegundoApellido")
+            </div>
+            <div class="form-group">
+                <label class="control-label">Codigo Persona</label>
+                @Html.TextBox("CodigoPersona")
             </div>
             <div class="form-group">
                 <label asp-for="IdSucursal" class="control-label"></label>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,11 @@ namespace Test_ABONAP.Controllers
     public class ClientesController : Controller
     {
         private readonly ABONAPContext _context;
+
+        //Atributos:
+        string Nombres;
+        string PrimerApellido;
+        string SegundoApellido;
 
         public ClientesController(ABONAPContext context)
         {
@@ -58,10 +64,25 @@ namespace Test_ABONAP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdCliente,FechaCreacion,FechaActualizacion,Codigo,Estado,IdPersona,IdSucursal")] Cliente cliente)
+        public async Task<IActionResult> Create([Bind("IdCliente,FechaCreacion,FechaActualizacion,Codigo,Estado,IdPersona,IdSucursal")] Cliente cliente, IFormCollection form)
         {
             if (ModelState.IsValid)
             {
+                var persona = new Persona()
+                {
+                    Nombres = form["Nombres"],
+                    PrimerApellido = form["PrimerApellido"],
+                    SegundoApellido = form["SegundoApellido"],
+                    Codigo = form["CodigoPersona"],
+                    Estado = true
+                };
+
+                _context.Personas.Add(persona);
+                await _context.SaveChangesAsync();
+
+                cliente.IdPersona = persona.IdPersona;
+                cliente.Estado = persona.Estado;
+
                 _context.Add(cliente);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
