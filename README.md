@@ -13,7 +13,7 @@ Este repositorio contiene todos los artefactos creados para la resolución del *
 **Respuesta**: Se puede utilizar la instrucción **DELETE FROM [Nombre de la Tabla]** sin especificar **WHERE**. La tabla quedará vacía.  
 
 3.  Escribir una consulta que devuelva las **direcciones** y **nombres** de las sucursales ABONAP y **ordenar** los resultados de forma **descendiente** por la sucursal.  
-**Respuesta**: El resultado se encuentra en el archivo [QuerySucursales](https://github.com/DericksRD/Test_ABONAP).  
+**Respuesta**: El resultado se encuentra en el archivo [QuerySucursales](https://github.com/DericksRD/Test_ABONAP/blob/main/Scripts%20Base%20de%20Datos/QuerySucursales.sql).  
 
 4.  ¿Debe la cláusula **WHERE** aparecer siempre antes de la cláusula **GROUP BY** en una consulta **SELECT**?  
 **Respuesta**: Si, esto es debido a que el **GROUP BY** es una clausula opcional del **WHERE**.  
